@@ -6,10 +6,7 @@ def fibonacci(n):
 	phi = (1 + square_root_5) / 2 # the golden ratio
 	psi = (1 - square_root_5) / 2 # 1 - phi
 
-	return int((phi ** n - psi ** n) / square_root_5)
+	return (phi ** n - psi ** n) / square_root_5
 
-for n in range(0, 12):
-    print(fibonacci(n))
-
-for n in range(-12, 0):
+for n in range(-12, 12):
     print(fibonacci(n))

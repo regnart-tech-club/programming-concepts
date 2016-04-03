@@ -1,4 +1,4 @@
-# Using functions as arguments and/or return values,
+# Using functions or lambdas as arguments and/or return values,
 # write a function that takes in three inputs, two arguments and an operator
 # then outputs the answer. For example, if the arguments are 2, '+', 3,
 # the function should return 5. If the arguments are 2, '*', 3,
