@@ -1,6 +1,6 @@
 import turtle
 
-class RobotTurtle:
+class RobotTurtle(object):
 	def __init__(self, t, name):
 		self.__name = name
 		self.__turtle = t

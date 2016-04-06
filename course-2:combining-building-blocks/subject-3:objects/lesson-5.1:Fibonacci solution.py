@@ -1,5 +1,5 @@
 # Implement the Fibonacci function as a functor.
-class Fibonacci:
+class Fibonacci(object):
 	def _square_root(self, n):
 		return n ** .5
 

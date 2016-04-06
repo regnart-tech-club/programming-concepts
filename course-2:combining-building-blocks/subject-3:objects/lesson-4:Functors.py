@@ -1,4 +1,4 @@
-class Add:
+class Add(object):
 	def __init__(self, lhs):
 		self.__lhs = lhs
 		
