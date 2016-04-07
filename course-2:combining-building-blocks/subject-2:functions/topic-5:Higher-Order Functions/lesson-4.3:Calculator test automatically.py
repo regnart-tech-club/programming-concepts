@@ -13,7 +13,7 @@ def operation(o):
 	elif o == '**':
 		return lambda l, r: l ** r
 	else:
-		return "I don't know how to use " + operator
+		return lambda l, r: "I don't know how to use " + operator
 
 def operate(lhs, operator, rhs):
 	return operation(operator)(lhs, rhs)
@@ -27,15 +27,7 @@ def test(condition):
 def is_equal_to(lhs, rhs):
 	return lambda: lhs == rhs
 
-def test_addition():
-	test(is_equal_to(operate(2, '+', 3), 5))
-
-def test_multiplication():
-	test(is_equal_to(operate(2, '*', 3), 6))
-
-def test_exponentiation():
-	test(is_equal_to(operate(2, '**', 3), 8))
-
-test_addition()
-test_multiplication()
-test_exponentiation()
+test(is_equal_to(operate(2, '+', 3), 5))
+test(is_equal_to(operate(2, '*', 3), 6))
+test(is_equal_to(operate(2, '**', 3), 8))
+test(is_equal_to(operate(2, '^', 3), "I don't know how to use ^")

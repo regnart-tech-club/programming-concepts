@@ -13,7 +13,7 @@ def operation(o):
 	elif o == '**':
 		return lambda l, r: l ** r
 	else:
-		return "I don't know how to use " + operator
+		return lambda l, r: "I don't know how to use " + operator
 
 def operate(lhs, operator, rhs):
 	return operation(operator)(lhs, rhs)
