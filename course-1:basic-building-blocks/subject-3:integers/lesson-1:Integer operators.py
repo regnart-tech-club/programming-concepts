@@ -1,0 +1,6 @@
+print(0 + 1)
+print(1 - 2)
+print(3 * 5)
+print(13 / 8)
+print(34 % 21)
+print(2 ** 3)
