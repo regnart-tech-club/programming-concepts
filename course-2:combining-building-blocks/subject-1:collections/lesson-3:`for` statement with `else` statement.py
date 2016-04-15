@@ -1,3 +1,4 @@
+# try up to three times
 for i in range(3): 
 	password = input('Enter the password:')
 
@@ -8,4 +9,5 @@ for i in range(3):
 	else:
 		print('Try again.')
 else:
+	# if `break` never called
 	print('Begone!')
