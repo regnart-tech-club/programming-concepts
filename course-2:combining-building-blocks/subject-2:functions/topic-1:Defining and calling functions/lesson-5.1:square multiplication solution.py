@@ -2,13 +2,22 @@
 def square(n):
 	return n * n
 
-def test_square_equals(arg, expected):
-	if square(arg) == expected:
-		print('Thumbs up.')
-	else:
-		print('Thumbs down.')
+if square(0) == 0:
+	print('Thumbs up.')
+else:
+	print('Thumbs down.')
 
-test_square_equals(0, 0)
-test_square_equals(1, 1)
-test_square_equals(2, 4)
-test_square_equals(3, 9)
+if square(1) == 1:
+	print('Thumbs up.')
+else:
+	print('Thumbs down.')
+
+if square(2) == 4:
+	print('Thumbs up.')
+else:
+	print('Thumbs down.')
+
+if square(3) == 9:
+	print('Thumbs up.')
+else:
+	print('Thumbs down.')

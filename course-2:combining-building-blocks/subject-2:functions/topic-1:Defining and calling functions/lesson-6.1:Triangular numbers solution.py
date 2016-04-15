@@ -7,13 +7,22 @@ def triangular(n):
 		
 	return sum
 
-def test_triangular_equals(arg, expected):
-	if triangular(arg) == expected:
-		print('Thumbs up.')
-	else:
-		print('Thumbs down.')
+if triangular(0) == 0:
+	print('Thumbs up.')
+else:
+	print('Thumbs down.')
 
-test_triangular_equals(0, 0)
-test_triangular_equals(1, 1)
-test_triangular_equals(2, 3)
-test_triangular_equals(3, 6)
+if triangular(1) == 1:
+	print('Thumbs up.')
+else:
+	print('Thumbs down.')
+
+if triangular(2) == 3:
+	print('Thumbs up.')
+else:
+	print('Thumbs down.')
+
+if triangular(3) == 6:
+	print('Thumbs up.')
+else:
+	print('Thumbs down.')
