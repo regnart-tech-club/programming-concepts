@@ -1,5 +1,6 @@
 # Write a function, `square`, that has one parameter and returns its square.
 def square(n):
+	# Return `n` times `n`.
 	return n * n
 
 # TODO: Talk about automated testing

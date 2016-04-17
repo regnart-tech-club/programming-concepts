@@ -1,5 +1,6 @@
 # Write a function, `square`, that has one parameter and returns its square.
 def square(n):
+	# Return `n` to the second power.
 	return n ** 2
 
 if square(0) == 0:
