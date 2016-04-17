@@ -2,6 +2,9 @@
 def square(n):
 	return n * n
 
+# TODO: Talk about automated testing
+# TODO: Show what happens if the function returned `n + n`.
+# TODO: SHow what happens if the function returned `n ** n`.
 if square(0) == 0:
 	print('Thumbs up.')
 else:
