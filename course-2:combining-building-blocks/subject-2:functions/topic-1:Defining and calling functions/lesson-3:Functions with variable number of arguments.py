@@ -6,8 +6,8 @@ def sum(*args):
 		
 	return s
 
-print sum(1)
-print sum(1, 2)
-print sum(1, 2, 4)
-print sum(1, 2, 4, 8)
-print sum(1, 2, 4, 8, 16)
+print(sum(1))
+print(sum(1, 2))
+print(sum(1, 2, 4))
+print(sum(1, 2, 4, 8))
+print(sum(1, 2, 4, 8, 16))
