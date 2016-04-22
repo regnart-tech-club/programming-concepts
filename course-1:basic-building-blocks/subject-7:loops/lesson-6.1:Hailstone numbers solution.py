@@ -22,15 +22,16 @@
 # 1
 # Number of iterations = 16
 
-n = int(input('Enter as positive integer'))
+n = int(input('Enter an integer:'))
 c = 0
-while n > 1:
-	c += 1
-	
-	print n
+while n != 1:
 	if n % 2 == 0:
 		n /= 2
 	else:
 		n = 3 * n + 1
 		
-print 'Number of iterations = ' + str(c)
+	c += 1
+		
+	print n
+
+print c
