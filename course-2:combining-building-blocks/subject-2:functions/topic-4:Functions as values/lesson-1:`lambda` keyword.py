@@ -1,3 +1,4 @@
+# TODO: Talk about the parameters the body, and the result of the lambda
 add = lambda lhs, rhs: lhs + rhs
 
 print(add(1, 2))
