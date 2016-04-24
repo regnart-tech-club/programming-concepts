@@ -1,13 +1,13 @@
-class FileSystemElement(object):
+class Node(object):
 	def __init__(self, id):
 		self._id = id
 		
 	def id(self):
 		return self._id
 
-class Directory(FileSystemElement):
+class Directory(Node):
 	def __init__(self, id):
-		FileSystemElement.__init__(self, id)
+		Node.__init__(self, id)
 
 		self._elements = []
 
@@ -20,9 +20,9 @@ class Directory(FileSystemElement):
 		for e in self._elements:
 			print e.id()
 
-class File(FileSystemElement):
+class File(Node):
 	def __init__(self, id):
-		FileSystemElement.__init__(self, id)
+		Node.__init__(self, id)
 		
 		self._contents = ''
 	
