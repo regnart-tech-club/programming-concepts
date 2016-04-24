@@ -8,3 +8,4 @@
 # if n = 3, it should return 2
 # if n = 5, it should return 5
 # if n = 7, it should return 13
+# Be sure to write automated tests for your solution.

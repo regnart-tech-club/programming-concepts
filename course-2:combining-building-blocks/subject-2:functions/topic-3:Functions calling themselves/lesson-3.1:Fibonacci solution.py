@@ -8,17 +8,20 @@
 # if n = 3, it should return 2
 # if n = 5, it should return 5
 # if n = 7, it should return 13
+# Be sure to write automated tests for your solution.
 def fibonacci(n):
-  if n == 0 or n == 1:
-    return n
-  else:
-    return fibonacci(n - 2) + fibonacci(n - 1)
+	if n == 0 or n == 1:
+		return n
+	else:
+		return fibonacci(n - 2) + fibonacci(n - 1)
 
 def test_fibonacci_equals(arg, expected):
-  if fibonacci(arg) == expected:
-    print('Thumbs up.')
-  else:
-    print('Thumbs down.')
+	observed = fibonacci(arg)
+	
+	if observed == expected:
+		print('Thumbs up.')
+	else:
+		print('Thumbs down. Expected %i but got %i' % (expected, observed))
 
 test_fibonacci_equals(0, 0)
 test_fibonacci_equals(1, 1)
