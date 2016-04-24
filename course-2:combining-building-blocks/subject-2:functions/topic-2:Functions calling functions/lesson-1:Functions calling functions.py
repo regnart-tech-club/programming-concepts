@@ -4,7 +4,7 @@ def square(x):
 def add_squares(x, y):
 	return square(x) + square(y)
 
-# TODO: Talk about the call stack and memory as it pertains to variables
+# TODO: Talk about the call stack and memory as it pertains to parameters
 print(add_squares(3, 4))
 print(add_squares(5, 12))
 print(add_squares(8, 15))
