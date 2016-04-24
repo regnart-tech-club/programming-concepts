@@ -1,14 +1,19 @@
 # The Fibonacci sequence starts with 0 and 1. Subsequent terms are then gotten by adding the previous two
 # such that the first seven terms are: 0, 1, 1, 2, 3, 5, 8.
 
-# Write a function that, given an integer n, returns the nth Fibonacci number.
+# Using recursion, write a function that, given an integer n, returns the nth Fibonacci number.
 # For example:
 # given n = 0, the function should return 0
 # if n = 1, it should return 1
-# if n = 3, it should return 2
-# if n = 5, it should return 5
-# if n = 7, it should return 13
+# if n = 2, it should return 1
+# if n = 4, it should return 3
+# if n = 8, it should return 21
 # Be sure to write automated tests for your solution.
+
+# Hint:
+# fibonacci(0) = 0
+# fibonacci(1) = 1
+# fibonacci(n) = fibonacci(n - 1) + fibonacci(n - 2)
 def fibonacci(n):
 	if n == 0 or n == 1:
 		return n
