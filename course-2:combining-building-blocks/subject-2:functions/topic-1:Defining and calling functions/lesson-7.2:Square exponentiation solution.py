@@ -1,4 +1,5 @@
 # A square of a number, n, is the number multiplied by itself.
+
 # Write a function, `square`, that has one parameter and returns its square.
 def square(n):
 	# Return `n` to the second power.
